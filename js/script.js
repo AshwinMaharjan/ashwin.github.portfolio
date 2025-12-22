@@ -102,7 +102,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     };
     
     try {
-        const response = await fetch('https://formspree.io/f/xnjaalke', {
+        const response = await fetch('https://formspree.io/f/xlgrdgzp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -131,3 +131,4 @@ document.getElementById('contactForm').addEventListener('submit', async function
         btn.textContent = originalBtnText;
     }
 });
+
