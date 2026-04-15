@@ -399,7 +399,6 @@ span{
     transition: 0.5s ease;
 
     /* New fixed height */
-    height: 350px; /* adjust based on your design */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* spaces icon, title, text, button evenly */
