@@ -1356,3 +1356,111 @@ span{
                 height: 400px;
             }
         }
+/* ===== HOME SECTION MOBILE FIX ===== */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        padding-top: 10rem;
+        gap: 0;
+    }
+
+    .home-content {
+        order: 2; /* Text below image */
+        text-align: center;
+    }
+
+    .home-img {
+        order: 1; /* Image above text */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .home-img img {
+        width: 22rem;       /* Fixed size, not vw */
+        height: 22rem;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        border: 0.3rem solid var(--main-color);
+        box-shadow: 0 0 2rem var(--main-color);
+        margin-left: 0;     /* Override the 100px margin */
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    /* Center social icons and info cards on mobile */
+    .social-media {
+        justify-content: center;
+    }
+
+    .info-cards {
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ===== ABOUT SECTION MOBILE FIX ===== */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 10rem 5% 4rem;
+    }
+
+    .about-img {
+        order: 1;           /* Image on top */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 20rem;       /* Controlled fixed size */
+        height: 20rem;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        border: 0.3rem solid var(--main-color);
+        box-shadow: 0 0 2rem var(--main-color);
+        margin-right: 0;    /* Override the 100px margin */
+        margin-top: 0;
+    }
+
+    .about-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .about-content .heading {
+        text-align: center;
+    }
+
+    .about-container p {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .skills-buttons {
+        justify-content: center;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 365px) {
+    .home-img img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .about-img img {
+        width: 16rem;
+        height: 16rem;
+    }
+}
