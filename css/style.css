@@ -1425,7 +1425,7 @@ span{
         object-fit: cover;
         object-position: top;
         border-radius: 50%;
-        margin-right: 0;    /* Override the 100px margin */
+            margin-right: 0;    /* Override the 100px margin */
         margin-top: 0;
     }
 
