@@ -340,13 +340,10 @@ span{
     background: var(--second-bg-color);
 }
 .about-img img{
-    margin-top:-70px;
     width: 35vw;
     margin-right: 100px;
 }
 .heading{
-        margin-top:-80px;
-
     text-align: center;
     font-size: 4.5rem;
 }
